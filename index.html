@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project HCI</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function proses(){
+            var nama = document.getElementById('nama').value;
+            var kelamin = document.getElementById('kelamin').value;
+            var tempat = document.getElementById('tempat').value;
+            var tgl = document.getElementById('tgl').value;
+            var agama = document.getElementById('agama').value;
+            var status = document.getElementById('status').value;
+            var kerja = document.getElementById('kerja').value;
+            var alamat = document.getElementById('alamat').value;
+            var nomor = document.getElementById('nomor').value;
+            var nik = document.getElementById('nik').value;
+            var kk = document.getElementById('kk').value;
+            if(nama == ''){
+                alert('Nama Tidak Boleh Kosong');
+                return false;
+            }else if(nik == ''){
+                alert('NIK Tidak Boleh Kosong');
+                return false;
+            }else if(tgl == ''){
+                alert('Tanggal Lahir Tidak Boleh Kosong');
+                return false;
+            }else if(tempat == ''){
+                alert('Tempat Lahir Tidak Boleh Kosong');
+                return false;
+            }else if(agama == ''){
+                alert('Agama Tidak Boleh Kosong');
+                return false;
+            }else if(status == ''){
+                alert('Status Perkawinan Tidak Boleh Kosong');
+                return false;
+            }else if(kerja == ''){
+                alert('Pekerjaan Tidak Boleh Kosong');
+                return false;
+            }else if(alamat == ''){
+                alert('Alamat Tidak Boleh Kosong');
+                return false;
+            }else if(nomor == ''){
+                alert('Nomor Telepon Tidak Boleh Kosong');
+                return false;
+            }else if(kk == ''){
+                alert('Nomor Kartu Keluarga Tidak Boleh Kosong');
+                return false;
+            }else{
+                alert('Nama : ' + nama + '\n' + 'Jenis Kelamin : ' + kelamin + '\n' + 'Tempat, Tanggal Lahir : ' + tempat + ', '+ tgl + '\n' + 'Agama : ' + agama + '\n' + 'Status Perkawinan : ' + status + '\n' + 'Pekerjaan : ' + kerja + '\n' + 'Alamat : ' + alamat + '\n' + 'Nomor Telepon : ' + nomor + '\n' + 'NIK : ' + nik + '\n' + 'Nomor KK : ' + kk );
+                var konfirmasi = confirm('Apakah data sudah benar?');
+                if (konfirmasi){
+                    alert("KTP akan diproses 1-2 Hari Kerja, Silahkan ambil KTP didukcapil terdekat");
+                    return true;
+                }else{
+                    return false;
+                }
+    }
+}
+	
+    </script>
+</head>
+<body>
+    <form onsubmit="return proses()" action="" method="POST">
+        <h1>Pendaftaran KTP</h1>
+        <font size="-1">Nama Lengkap :</font><br><input placeholder="Nama Lengkap" type="text" name="nama" id="nama"><br>
+        <font size="-1">Jenis Kelamin :</font> <br>
+        <select  name="kelamin" id="kelamin">
+            <option selected disabled>Pilih Jenis Kelamin</option>
+            <option>Laki-Laki</option>
+            <option>Perempuan</option>
+        </select><br>
+        <font size="-1">Tempat Lahir (Kota): </font><input placeholder="Tempat Lahir" type="text" name="tempat" id="tempat"><br>
+        <font size="-1">Tanggal Lahir :</font> <br> <input type="date" name="tgl" id="tgl" max="2005-12-31"><br>
+        <font size="-1">Agama :</font> <br>
+        <select  name="agama" id="agama">
+            <option selected disabled>Pilih Agama</option>
+            <option>Kristen Protestan</option>
+            <option>Islam</option>
+            <option>Hindu</option>
+            <option>Buddha</option>
+            <option>Konghucu</option>
+            <option>Kristen Katolik</option>
+        </select><br>
+        <font size="-1">Status Perkawinan :</font> <br>
+        <select  name="status" id="status">
+            <option selected disabled>Pilih Status Perkawinan</option>
+            <option>Belum Menikah</option>
+            <option>Menikah</option>
+            <option>Cerai</option>
+        </select><br>
+        <font size="-1">Pekerjaan :</font><input placeholder="Pekerjaan" type="text" name="kerja" id="kerja"><br>
+        <font size="-1">Alamat Lengkap :</font><textarea placeholder="Alamat Lengkap" name="alamat" id="alamat"></textarea><br>
+        <font size="-1">Nomor Telepon :</font><input placeholder="Nomor Telepon" type="text" name="nomor" id="nomor"><br>
+        <font size="-1">Nomor NIK :</font> <br><input placeholder="16 Digit" minlength="16" maxlength="16" type="text" name="nik" id="nik"><br>
+        <font size="-1">Nomor KK (Kartu Keluarga) :</font> <br><input placeholder="16 Digit" minlength="16" maxlength="16" type="text" name="kk" id="kk"><br>
+        <input type="checkbox" required><font size="-1" class="label_check">Apakah data sudah sesuai?</font><br>
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>
