@@ -29,7 +29,8 @@
 
 11.	Di dalam <body>, terdapat elemen <form> yang memiliki atribut onsubmit yang mengeksekusi fungsi proses() saat form dikirim.
 
-12.	Pada elemen form, terdapat judul "Pendaftaran KTP" yang ditampilkan dengan menggunakan tag "<h1>".
+12.	Pada elemen form, terdapat judul "Pendaftaran KTP" yang ditampilkan dengan menggunakan tag h1.
+
 13.	Selanjutnya, terdapat beberapa elemen form seperti input teks, pilihan (dropdown), dan textarea yang digunakan untuk mengumpulkan data dari pengguna.
 
 14.	Setiap elemen form diberi atribut name yang akan digunakan saat form dikirimkan.
@@ -49,7 +50,7 @@
 
 2.	form: Mengatur properti untuk elemen <form>, seperti lebar maksimum (max-width), margin, padding, border, dan warna latar belakang.
 
-3.	h1: Mengatur properti untuk elemen <h1>, seperti penataan teks di tengah (text-align: center).
+3.	h1: Mengatur properti untuk elemen h1, seperti penataan teks di tengah (text-align: center).
 
 4.	input[type="text"], input[type="date"]: Mengatur properti untuk elemen input dengan tipe "text" dan "date", seperti lebar (width), padding, margin bawah, border, dan jenis font.
 
