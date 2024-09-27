@@ -29,7 +29,7 @@
 
 11.	Di dalam <body>, terdapat elemen <form> yang memiliki atribut onsubmit yang mengeksekusi fungsi proses() saat form dikirim.
 
-12.	Pada elemen form, terdapat judul "Pendaftaran KTP" yang ditampilkan dengan menggunakan tag <h1>.
+12.	Pada elemen form, terdapat judul "Pendaftaran KTP" yang ditampilkan dengan menggunakan tag "<h1>".
 13.	Selanjutnya, terdapat beberapa elemen form seperti input teks, pilihan (dropdown), dan textarea yang digunakan untuk mengumpulkan data dari pengguna.
 
 14.	Setiap elemen form diberi atribut name yang akan digunakan saat form dikirimkan.
@@ -43,7 +43,8 @@
 17.	Terdapat sebuah checkbox yang diberi atribut required untuk memastikan bahwa pengguna harus mencentangnya sebelum form dapat dikirimkan.
 
 18.	Terakhir, terdapat sebuah tombol submit dengan nilai "Daftar" yang akan mengirimkan form saat diklik.
-Penjelasan file style.css
+
+   	<h1>Penjelasan file style.css</h1>
 1.	body: Mengatur properti untuk elemen <body>, seperti jenis font yang digunakan (font-family) dan warna latar belakang (background-color).
 
 2.	form: Mengatur properti untuk elemen <form>, seperti lebar maksimum (max-width), margin, padding, border, dan warna latar belakang.
